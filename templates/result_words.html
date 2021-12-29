@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>词频结果</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .bg {
+            margin: 0;
+            padding: 0;
+            /* font-family: 'montserrat', sans-serif; */
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            min-height: 100vh;
+            background: url('../static/404_bg.jpg') no-repeat;
+            filter: blur(8px);
+            /* background-image: linear-gradient(to top, #accbee 0%, #e7f0fd 100%); */
+        }
+
+        .container {
+            width: 100%;
+            position: absolute;
+            top: 25%;
+            transform: rotateY(-50%);
+            text-align: center;
+            color: #343434;
+        }
+
+        .container h1 {
+            font-size: 75px;
+            margin: 0;
+            font-weight: 600;
+            letter-spacing: 20px;
+            /* background: url(../static/register.jpg) center no-repeat; */
+        }
+
+        .container a {
+            text-decoration: none;
+            border: none;
+            background: rgba(222, 78, 56, 0.69);
+            color: #fff;
+            padding: 12px 24px;
+            margin-top: 10px;
+            display: inline-block;
+            border-radius: 25px;
+            font-size: 14px;
+            text-transform: uppercase;
+            transition: 0.4s;
+        }
+
+        .container a:hover {
+            background: #e55039;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bg"></div>
+    <div class="container">
+        <h1>您查找的词是：{{ key }}</h1>
+        <h1>出现的次数一共是：{{ value }}</h1>
+        <a href="{{ url_for ('index') }}">GO BACK</a>
+    </div>
+</body>
+
+</html>

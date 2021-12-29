@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>清单</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: url('../static/404_bg.jpg') no-repeat;
+            /* filter: blur(8px); */
+        }
+
+
+
+        .container {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            max-width: 1200px;
+            flex-wrap: wrap;
+            z-index: 1;
+        }
+
+        .container .card {
+            position: relative;
+            width: 300px;
+            height: 420px;
+            margin: 30px;
+            box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+            border-radius: 15px;
+            background-color: rgba(255, 255, 255, 0.1);
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-top: rgba(255, 255, 255, 0.5) 1px solid;
+            border-left: rgba(255, 255, 255, 0.5) 1px solid;
+            backdrop-filter: blur(5px);
+        }
+
+        .container .card .content {
+            padding: 20px;
+        }
+
+        .container .card .content h2 {
+            position: absolute;
+            top: 340px;
+            right: -41px;
+            font-size: 5em;
+            color: rgba(255, 255, 255, 0.05);
+            pointer-events: none;
+        }
+
+        .container .card .content h3 {
+            position: absolute;
+            top: 18px;
+            right: 117px;
+            text-align: center;
+            font-size: 1.8em;
+            color: #000;
+        }
+
+        .container .card .content p {
+            margin-bottom: 15px;
+            font-size: 1em;
+            font-weight: 600;
+            color: #000;
+        }
+
+        .container .card .content a {
+            position: relative;
+            display: inline-block;
+            color: #000;
+            text-decoration: none;
+            top: 40px;
+            font-weight: 500;
+            border-radius: 20px;
+            background-color: #fff;
+            padding: 8px 20px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="content">
+                <h2>Solitary娃娃屋</h2>
+                <h3>LIST</h3>
+                <p>你购买的商品名称: {{lst_name }}</p>
+                <p>姓名:{{ name }}</p>
+                <p>地址:{{ add }}</p>
+                <p>电话:{{tel}}</p>
+                <p>温馨提示:请爱护每一只玩偶</p>
+                <a href="{{ url_for('shop') }}">返回上一页</a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

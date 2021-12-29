@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>欢迎来到Solitary娃娃屋</title>
+    <link rel="stylesheet" href="../static/all.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet" />
+    <link rel="stylesheet" href="../static/first.css">
+</head>
+
+<body>
+    <!--  -->
+    <a href="{{ url_for('index')}}" style="text-decoration: none; color: #fff;">返回首页</a>
+    <div class="tm-container">
+        <div class="tm-row">
+            <!-- Site Header -->
+            <div class="tm-left">
+                <div class="tm-left-inner">
+                    <div class="tm-site-header">
+                        <h1 class="tm-site-name">{{ username }}你来啦！</h1>
+                    </div>
+                    <nav class="tm-site-nav">
+                        <ul class="tm-site-nav-ul">
+                            <li class="tm-page-nav-item">
+                                <a href="#drink" class="tm-page-link active">
+                                    <span>Disney玩偶</span>
+                                </a>
+                            </li>
+                            <li class="tm-page-nav-item">
+                                <a href="#about" class="tm-page-link">
+                                    <span>Disneyland起源</span>
+                                </a>
+                            </li>
+                            <li class="tm-page-nav-item">
+                                <a href="#special" class="tm-page-link">
+                                    <span>Disneyland游乐设施 </span>
+                                </a>
+                            </li>
+                            <li class="tm-page-nav-item">
+                                <a href="#contact" class="tm-page-link">
+                                    <span>购买玩偶</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="tm-right">
+                <main class="tm-main">
+                    <div id="drink" class="tm-page-content">
+                        <!-- Drink Menu Page -->
+                        <nav class="tm-black-bg tm-drinks-nav">
+                            <ul>
+                                <li>
+                                    <a href="#" class="tm-tab-link active" data-id="cold">草莓熊（Lotso）</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="tm-tab-link" data-id="hot">玲娜贝儿（LinaBell）</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="tm-tab-link" data-id="juice">星黛露（StellaLou）</a>
+                                </li>
+                            </ul>
+                        </nav>
+
+                        <div id="cold" class="tm-tab-content">
+                            <div class="tm-list">
+                                <div class="tm-list-item">
+                                        <a href="#">
+                                             <img src="/期末_flask/static/草莓熊1.JPG" width="160" height="160">
+                                           </a> &ensp; &ensp;
+
+
+
+
+
+
+                                    </a>
+                                    <div class="tm-black-bg tm-list-item-text">
+                                        <h3 class="tm-list-item-name"><span
+                                                class="tm-list-item-price">Lotso介绍</span>
+                                        </h3>
+                                        <p class="tm-list-item-description">Lotso就是大受欢迎的反派“草莓熊”——这是一个特殊的角色，他看上去是粉红色、毛茸茸的，闻起来是香甜的草莓味，实则在憨厚可爱的外表下有一颗阴暗扭曲的心。</p>
+                                    </div>
+                                </div>
+                                <div class="tm-list-item">
+                                     <a href="#">
+                                             <img src="/期末_flask/static/草莓熊2.JPG" width="160" height="160">
+                                           </a> &ensp; &ensp;
+                                    <div class="tm-black-bg tm-list-item-text">
+                                        <h3 class="tm-list-item-name"><span
+                                                class="tm-list-item-price">Lotso经历</span></h3>
+                                        <p class="tm-list-item-description">虽然是剧中的反派，他却收获了无数粉丝。剧中草莓熊的悲伤往事，从一开始的阳光明媚、温馨灿烂瞬间转到雷电交加、风雨冰凉，再加上小提琴曲的泣血伴奏，不禁让人黯然泪下，大呼心疼。
+</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="hot" class="tm-tab-content">
+                            <div class="tm-list">
+                                <div class="tm-list-item">
+                                      <a href="#">
+                                             <img src="/期末_flask/static/玲娜贝儿1.JPG" width="160" height="160">
+                                           </a> &ensp; &ensp;
+                                    <div class="tm-black-bg tm-list-item-text">
+                                        <h3 class="tm-list-item-name"><span
+                                                class="tm-list-item-price">LinaBell介绍</span></h3>
+                                        <p class="tm-list-item-description">
+                                            迪士尼讲述的故事里，达菲在森林里迷路后，是玲娜贝儿通过达菲身上的痕迹为线索，最终帮达菲找到了回家的路，在这个设定里，玲娜贝儿是个小小冒险家，她热爱大自然，日常拿着放大镜在森林里东看西看，又有着大大咧咧的个性，非常喜欢交朋友。</p>
+                                    </div>
+                                </div>
+                                <div class="tm-list-item">
+                                    <a href="#">
+                                             <img src="/期末_flask/static/玲娜贝儿2.JPG" width="160" height="160">
+                                           </a> &ensp; &ensp;
+                                    <div class="tm-black-bg tm-list-item-text">
+                                        <h3 class="tm-list-item-name"><span
+                                                class="tm-list-item-price">LinaBell性格特点</span></h3>
+                                        <p class="tm-list-item-description">
+                                            她生活在森林里，像侦探一样热衷于解谜并且见多识广，拥有丰富的自然知识。即使遇到难题，也能发现其中的幽默和乐趣
+                                           并且探索谜题时会使用放大镜和她的长尾巴。</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div id="juice"  class="tm-tab-content">
+                            <div class="tm-list">
+                                <div class="tm-list-item">
+                                     <a href="#">
+                                             <img src="/期末_flask/static/星黛露1.JPG" width="160" height="160">
+                                           </a> &ensp; &ensp;
+                                    <div class="tm-black-bg tm-list-item-text">
+                                        <h3 class="tm-list-item-name"><span class="tm-list-item-price">StellaLou介绍</span>
+                                        </h3>
+                                        <p class="tm-list-item-description">StellaLou是迪士尼里的玩偶角色，是一只兔子。
+一身熏衣紫绒毛，长长耳朵由米奇头形状的可爱印记
+拥有棕色与黑色相间的眼睛，长长的睫毛</p>
+                                    </div>
+                                </div>
+                                <div class="tm-list-item">
+                                    <a href="#">
+                                             <img src="/期末_flask/static/星黛露2.JPG" width="160" height="160">
+                                           </a> &ensp; &ensp;
+                                    <div class="tm-black-bg tm-list-item-text">
+                                        <h3 class="tm-list-item-name"><span class="tm-list-item-price">StellaLou由来</span>
+                                        </h3>
+                                        <p class="tm-list-item-description">
+在迪士尼故事里，星黛露是一只紫色的兔子，她和米奇的玩偶达菲熊相遇后，星黛露告诉达菲：她的梦想是成为百老汇舞蹈家，并和他分享“追随梦想”的意义。</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end Drink Menu Page -->
+                    </div>
+
+                    <!-- About Us Page -->
+                    <div id="about" class="tm-page-content">
+                        <div class="tm-black-bg tm-mb-20 tm-about-box-2">
+                            <div class="tm-list-item tm-list-item-2">
+                                <div class="tm-list-item-text-2">
+                                    <h2 class="tm-text-primary">关于Disneyland</h2>
+                                    <p>1919年，沃尔特·迪斯尼邂逅乌布·伊沃克斯，两个年轻人一拍即合，成立了伊沃克斯－迪斯尼商业美术公司。沃尔特思维敏捷，伊沃克斯绘画技艺一流，两人正好取长补短。到目前为止，全球已有六个迪斯尼乐园，分别位于美国洛杉矶和奥兰多、日本东京、法国巴黎、中国香港和上海。</p>
+                                </div>
+                                 <img src="/期末_flask/static/关于.JPG" width="160" height="160">
+                                    class="tm-list-item-img tm-list-item-img-big tm-img-right">
+                            </div>
+                            <p>上海迪士尼度假区是一个全方位的度假目的地，集梦幻、想象、创意和探险于一身，将延续全球迪士尼度假区的传统，为游客带来全球最佳的度假体验，让每一位游客在由主题乐园，主题酒店，购物餐饮娱乐区，和配套休闲区中乐享“不只一日”的沉浸式神奇体验。
+
+
+                            </p>
+                        </div>
+                    </div>
+                    <!-- end About Us Page -->
+
+                    <!-- Special Items Page -->
+                    <div id="special" class="tm-page-content">
+                        <div class="tm-special-items">
+                            <div class="tm-black-bg tm-special-item">
+                                <a href="#">  <img src="/期末_flask/static/过山车.JPG" width="160" height="160">
+                                </a>
+                                <div class="tm-special-item-description">
+                                    <h2 class="tm-text-primary tm-special-item-title">过山车</h2>
+                                    <p class="tm-special-item-text">
+                                       美国发明家、商人拉马库斯·阿德纳·汤普森（LaMarcus Adna Thompson）是第一个注册过山车相关专利技术的人（1885年1月20日），并曾制造过数十个过山车设施，因此被誉称为“重力之父”（Father of Gravity）。</p>
+                                </div>
+                            </div>
+                            <div class="tm-black-bg tm-special-item">
+                                <a href="#">
+                                    <img src="/期末_flask/static/美国小镇大街.JPG" width="160" height="160">
+                                </a>
+                                <div class="tm-special-item-description">
+                                    <h2 class="tm-text-primary tm-special-item-title">美国小镇大街 </h2>
+                                    <p class="tm-special-item-text">
+                                        美国小镇大街是根据典型的美国小镇设计而成，富于怀旧色彩，所展现的时代正是煤气灯正由电灯取替、以及汽车代替马车的年代。
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end Special Items Page -->
+
+                    <!-- Contact Page -->
+                    <div id="contact" class="tm-page-content">
+                        <div class="tm-black-bg tm-contact-text-container">
+                            <h2 class="tm-text-primary">Lists</h2>
+                            <form action="/list" method="post">
+                                <p>
+                                    {% for product in product_lists %}
+                                <p><input type="checkbox" name="list" value="{{ product[0] }}">{{ product[0]
+                                    }}----------{{
+                                    product[1] }}<br>
+                                </p>
+                                {% endfor %}
+                                <div class="tm-form-group">
+                                    <input type="text" name="name" class="tm-form-control" placeholder="Name"
+                                        required="" />
+                                </div>
+                                <div class="tm-form-group">
+                                    <input type="tel" name="tel" class="tm-form-control" placeholder="Phone"
+                                        required="" />
+                                </div>
+                                <div class="tm-form-group">
+                                    <input type="text" name="add" class="tm-form-control" placeholder="Address"
+                                        required="" />
+                                </div>
+                                <div>
+                                    <button type="submit" class="tm-btn-primary tm-align-right">
+                                        Submit
+                                    </button>
+                                </div>
+                                </p>
+                            </form>
+                        </div>
+                    </div>
+                    <!-- end Contact Page -->
+                </main>
+            </div>
+        </div>
+    </div>
+
+    <!-- Background video -->
+    <div class="tm-video-wrapper">
+        <i id="tm-video-control-button" class="fas fa-pause"></i>
+        <video autoplay muted loop id="tm-video">
+            <source src="https://www.tooplate.com/templates/2121_wave_cafe/video/wave-cafe-video-bg.mp4"
+                type="video/mp4">
+        </video>
+    </div>
+
+    <script src="https://www.tooplate.com/templates/2121_wave_cafe/js/jquery-3.4.1.min.js"></script>
+    <script>
+
+        function setVideoSize() {
+            const vidWidth = 1920;
+            const vidHeight = 1080;
+            const windowWidth = window.innerWidth;
+            const windowHeight = window.innerHeight;
+            const tempVidWidth = windowHeight * vidWidth / vidHeight;
+            const tempVidHeight = windowWidth * vidHeight / vidWidth;
+            const newVidWidth = tempVidWidth > windowWidth ? tempVidWidth : windowWidth;
+            const newVidHeight = tempVidHeight > windowHeight ? tempVidHeight : windowHeight;
+            const tmVideo = $('#tm-video');
+
+            tmVideo.css('width', newVidWidth);
+            tmVideo.css('height', newVidHeight);
+        }
+
+        function openTab(evt, id) {
+            $('.tm-tab-content').hide();
+            $('#' + id).show();
+            $('.tm-tab-link').removeClass('active');
+            $(evt.currentTarget).addClass('active');
+        }
+
+        function initPage() {
+            let pageId = location.hash;
+
+            if (pageId) {
+                highlightMenu($(`.tm-page-link[href^="${pageId}"]`));
+                showPage($(pageId));
+            }
+            else {
+                pageId = $('.tm-page-link.active').attr('href');
+                showPage($(pageId));
+            }
+        }
+
+        function highlightMenu(menuItem) {
+            $('.tm-page-link').removeClass('active');
+            menuItem.addClass('active');
+        }
+
+        function showPage(page) {
+            $('.tm-page-content').hide();
+            page.show();
+        }
+
+        $(document).ready(function () {
+
+            /***************** Pages *****************/
+
+            initPage();
+
+            $('.tm-page-link').click(function (event) {
+
+                if (window.innerWidth > 991) {
+                    event.preventDefault();
+                }
+
+                highlightMenu($(event.currentTarget));
+                showPage($(event.currentTarget.hash));
+            });
+
+
+            /***************** Tabs *******************/
+
+            $('.tm-tab-link').on('click', e => {
+                e.preventDefault();
+                openTab(e, $(e.target).data('id'));
+            });
+
+            $('.tm-tab-link.active').click(); // Open default tab
+
+
+            /************** Video background *********/
+
+            setVideoSize();
+
+            // Set video background size based on window size
+            let timeout;
+            window.onresize = function () {
+                clearTimeout(timeout);
+                timeout = setTimeout(setVideoSize, 100);
+            };
+
+            // Play/Pause button for video background      
+            const btn = $("#tm-video-control-button");
+
+            btn.on("click", function (e) {
+                const video = document.getElementById("tm-video");
+                $(this).removeClass();
+
+                if (video.paused) {
+                    video.play();
+                    $(this).addClass("fas fa-pause");
+                } else {
+                    video.pause();
+                    $(this).addClass("fas fa-play");
+                }
+            });
+        });
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <title>词频数查询</title>
+    <link rel="stylesheet" href="../static/login.css">
+</head>
+
+<body>
+
+    <!--背景-->
+    <div class="main" style="background: url('../static/word_bg.jpg') 100% 100% no-repeat; background-size: 100% 100%;">
+        <!--登录框-->
+        <div class="loginFrame">
+            <!--标题-->
+            <p class="loginTitle">欢迎光临~~~【词频数查询】</p>
+            <form method="post" action="/words">
+                <!--用户名-->
+                <div class="user">
+                    <label>
+                        <span>Words</span>
+                        <!--输入框-->
+                        <input type="text" name="word">
+                    </label>
+                </div>
+                <!--密码-->
+                <div class="password">
+                    <label>
+                        <span>Vowels</span>
+                        <!--输入框-->
+                        <input type="text" name="vowels">
+                    </label>
+                </div>
+                <!--登录按钮-->
+                <div class="enterBut">
+                    <button type="submit">提交</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
